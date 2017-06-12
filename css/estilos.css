@@ -1,3 +1,234 @@
 @charset "utf-8";
 /* CSS Document */
+html {
+	margin:0px;
+	padding:0px;
+}
 
+body {
+	background-color: #02010a;
+	font-family: 'Dancing Script', cursive;	
+	margin:0px;
+	padding:0px;
+}
+
+#contenido {
+	width:100%;
+	max-width:900px;
+	margin: 0 auto 0 auto;	
+	animation: slidein 1.5s;
+}
+
+@-webkit-keyframes slidein {
+0% {
+	margin-top:150%;
+}
+
+60% {
+	margin-top:-5%;
+}
+
+100% {
+	margin-top:0%;
+}
+
+}
+
+img {
+	width:100%;	
+}
+
+/******************* Area Header **************/
+header {
+	background-color:#5b7989;
+	border-radius:10px 10px 0px 0px;	
+	-moz-border-radius:10px 10px 0px 0px;
+	-webkit-border-radius:10px 10px 0px 0px;
+}
+
+nav ul {
+	display:flex;
+	flex-direction:row;	
+}
+
+nav ul li {
+	padding:15px 10px 5px 10px;
+	display:block;	
+}
+
+nav ul li a {
+	font-size:20px;
+	color:white;	
+}
+
+nav ul li a.active {
+	text-decoration:none;	
+}
+/*************** Fin Area Header **************/
+
+
+/******************* Area Footer **************/
+footer {
+	border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	background-color: #c6d5c5;
+	padding:1vh 0 2vh 0;	
+}
+
+footer section h2 {
+	font-weight:700;
+}
+
+footer section p {
+	padding:0 5% 0 5%;
+	margin: 2px 0 2px 0;
+}
+
+#redes-sociales {
+	display:flex;
+	flex-direction:column;	
+}
+
+footer section span {
+	padding:0 5% 0 5%;
+	margin: 2px 0 2px 0;
+}
+
+#fb:hover {
+	color:blue;
+	cursor:pointer;
+}
+
+#fb::before {
+	content:url(imagenes/fb-icon.png);
+	padding-right:5px;
+}
+
+#tw:hover {
+	color:lightblue;
+	cursor:pointer;
+	text-shadow: 1px 1px white, -1px -1px white, 1px -1px white, -1px 1px white;
+	font-weight:700;
+}
+
+#tw::before {
+	content:url(imagenes/twi-icon.png);
+	padding-right:5px;
+}
+
+#yt:hover {
+	color:red;
+	cursor:pointer;	
+}
+
+#yt::before {
+	content: url(imagenes/yout-icon.png);
+	padding-right:5px;
+}
+
+#ins:hover {
+	color:brown;
+	cursor:pointer;	
+}
+
+#ins::before {
+	content: url(imagenes/inst-icon.png);
+	padding-right:5px;
+}
+
+/*************** Fin Area Footer **************/
+
+
+
+/***********************************************
+Laptops code
+***********************************************/
+@media screen and (min-width:901px) {
+
+/******************* Area Header **************/
+header {
+	display:flex;	
+	flex-direction:row;
+	padding: 1vh 2vw 1vh 2vw;
+}
+
+header h1 {
+	width:60%;
+	color:white;
+	text-shadow:2px 2px #02010a;
+}
+
+header nav {
+	width:40%;	
+}
+
+/*************** Fin Area Header **************/
+
+
+
+/******************* Area Footer **************/
+footer {
+	display:flex;
+	flex-direction:row;	
+}
+
+footer section {
+	width:23%;
+	padding: 0 1% 0 1%;	
+}
+
+/*************** Fin Area Footer **************/
+
+}
+
+/***********************************************
+Mobiles code
+***********************************************/
+@media screen and (max-width:900px) {
+
+/******************* Area Header **************/
+header {
+	display:flex;	
+	flex-direction:column;
+	padding: 2vh 2vw 3vh 2vw;
+}
+
+header h1 {
+	width:100%;
+	color:white;
+	text-shadow:2px 2px #02010a;
+	text-align:center;
+	margin: 2px 0 2px 0;
+	font-size:1.7rem;
+}
+
+header nav {
+	width:100%;	
+}
+
+nav ul {
+	width:220px;
+	margin: 0 auto 0 auto;	
+	padding-left:0px;
+}
+
+/*************** Fin Area Header **************/
+
+
+
+/******************* Area Footer **************/
+footer {
+	display:flex;
+	flex-direction:column;	
+	padding:2vh 3vw 3vh 10vw;
+}
+
+footer section {
+	width:98%;
+	padding: 0 1% 0 1%;	
+}
+
+/*************** Fin Area Footer **************/
+
+}
