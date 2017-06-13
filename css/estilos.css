@@ -138,28 +138,21 @@ Contenidos Home General
 	padding: 10px 0 10px 0;	
 }
 
-#secundaria-home #paisajes figure img {
-	filter: drop-shadow(4px 4px #82c3a6);
-	-webkit-filter: drop-shadow(4px 4px #82c3a6);
-	border: solid 2px white;
-}
-
 #secundaria-home #paisajes figure:hover {
 	-ms-transform: rotate(10deg);
 	-webkit-transform: rotate(10deg);
 	transform: rotate(10deg);
+	filter: drop-shadow(4px 4px #82c3a6);
+	-webkit-filter: drop-shadow(4px 4px #82c3a6);	
 }
 
-#secundaria-home #rostros figure img {
-	filter: drop-shadow(4px 4px #82c3a6);
-	-webkit-filter: drop-shadow(4px 4px #82c3a6);
-	border: solid 2px white;
-}
 
 #secundaria-home #rostros figure:hover {
 	-ms-transform: translate(20px, -5px);
 	-webkit-transform: translate(20px, -5px);	
 	transform: translate(20px, -5px);
+	filter: drop-shadow(2px 2px #82c3a6);
+	-webkit-filter: drop-shadow(2px 2px #82c3a6);	
 }
 
 /******************************************************************
