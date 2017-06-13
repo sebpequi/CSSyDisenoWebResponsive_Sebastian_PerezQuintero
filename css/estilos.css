@@ -36,6 +36,8 @@ body {
 
 img {
 	width:100%;	
+	filter: drop-shadow(2px 2px #02010a);
+	-webkit-filter: drop-shadow(2px 2px #02010a);
 }
 
 /******************* Area Header **************/
@@ -65,6 +67,132 @@ nav ul li a.active {
 	text-decoration:none;	
 }
 /*************** Fin Area Header **************/
+
+/******************************************************************
+Contenidos Home General
+******************************************************************/
+#central-home {
+	background-color:#82c3a6;
+	padding: 10px 0 10px 0;
+}
+
+#central-home figure {
+	width:90%;
+	margin:0 auto 0 auto;
+	animation: universo 10s ease-in-out 3s infinite;
+	filter: brightness(100%);
+	-webkit-filter: brightness(100%);	
+
+}
+
+@-webkit-keyframes universo {
+	0% {
+		filter: brightness(100%);
+		-webkit-filter: brightness(100%);	
+	}
+	5% {
+		filter: brightness(20%);
+		-webkit-filter: brightness(20%);	
+	}
+	20% {
+		filter: brightness(50%);
+		-webkit-filter: brightness(50%);	
+	}		
+	30% {
+		filter: brightness(80%);
+		-webkit-filter: brightness(80%);	
+	}
+	40% {
+		filter: sepia(20%);
+		-webkit-filter: sepia(20%);	
+	}
+	50% {
+		filter: sepia(50%);
+		-webkit-filter: sepia(50%);	
+	}
+	60% {
+		filter: sepia(90%);
+		-webkit-filter: sepia(90%);	
+	}
+	70% {
+		filter: grayscale(15%);
+		-webkit-filter: grayscale(15%);	
+	}
+	80% {
+		filter: grayscale(40%);
+		-webkit-filter: grayscale(40%);	
+	}
+	90% {
+		filter: grayscale(70%);
+		-webkit-filter: grayscale(70%);	
+	}			
+	100% {
+		filter: grayscale(100%);
+		-webkit-filter: grayscale(100%);	
+	}	
+}
+
+#secundaria-home {
+	background-color:#d5c75f;
+	border: solid 1px #CC0;
+	padding: 10px 0 10px 0;	
+}
+
+#secundaria-home #paisajes figure img {
+	filter: drop-shadow(4px 4px #82c3a6);
+	-webkit-filter: drop-shadow(4px 4px #82c3a6);
+	border: solid 2px white;
+}
+
+#secundaria-home #paisajes figure:hover {
+	-ms-transform: rotate(10deg);
+	-webkit-transform: rotate(10deg);
+	transform: rotate(10deg);
+}
+
+#secundaria-home #rostros figure img {
+	filter: drop-shadow(4px 4px #82c3a6);
+	-webkit-filter: drop-shadow(4px 4px #82c3a6);
+	border: solid 2px white;
+}
+
+#secundaria-home #rostros figure:hover {
+	-ms-transform: translate(20px, -5px);
+	-webkit-transform: translate(20px, -5px);	
+	transform: translate(20px, -5px);
+}
+
+/******************************************************************
+Fin Contenidos Home General
+******************************************************************/
+
+/******************************************************************
+Contenidos Galerias
+******************************************************************/
+#galeria {
+	background-color:#d5c75f;
+	padding: 10px 0 10px 0;		
+}
+
+#area-galerias {
+	width:90%;
+	margin: 0 auto 0 auto;	
+}
+
+#area-galerias figure:nth-child(1) {
+	filter: blur(10px);
+}
+
+#area-galerias figure:nth-child(even) {
+	filter: grayscale(100%);
+}
+
+#area-galerias figure:nth-child(3) {
+	filter: sepia(90%);
+}
+/******************************************************************
+Fin Contenidos Galerias
+******************************************************************/
 
 
 /******************* Area Footer **************/
@@ -166,6 +294,51 @@ header nav {
 /*************** Fin Area Header **************/
 
 
+/******************************************************************
+Contenidos Home
+******************************************************************/
+#secundaria-home {
+	display:flex;
+	flex-direction:row;
+}
+
+#secundaria-home #paisajes {
+	width:45%;
+	padding:0 2.5% 0 2.5%;
+}
+
+#secundaria-home #rostros {
+	width:45%;
+	padding:0 2.5% 0 2.5%;
+}
+
+
+/******************************************************************
+Fin Contenidos Home
+******************************************************************/
+
+/******************************************************************
+Contenidos Galerias
+******************************************************************/
+#area-galerias {
+	display:flex;
+	flex-flow: row wrap;
+}
+
+#area-galerias figure {
+	width:33.333%;
+	margin:10px 0 10px 0;
+}
+
+#area-galerias figure img {
+	width:95%;
+	margin: 0 auto 0 auto;
+}
+/******************************************************************
+Fin Contenidos Galerias
+******************************************************************/
+
+
 
 /******************* Area Footer **************/
 footer {
@@ -214,6 +387,51 @@ nav ul {
 }
 
 /*************** Fin Area Header **************/
+
+
+/******************************************************************
+Contenidos Home
+******************************************************************/
+#secundaria-home {
+	display:flex;
+	flex-direction:column;
+}
+
+#secundaria-home #paisajes {
+	width:90%;
+	padding:10px auto 10px auto;
+}
+
+#secundaria-home #rostros {
+	width:90%;
+	padding:10px auto 10px auto;
+}
+
+
+/******************************************************************
+Fin Contenidos Home
+******************************************************************/
+
+/******************************************************************
+Contenidos Galerias
+******************************************************************/
+#area-galerias {
+	display:flex;
+	flex-direction: column;
+}
+
+#area-galerias figure {
+	width:90%;
+	margin:10px auto 10px auto;
+}
+
+#area-galerias figure img {
+	width:95%;
+	margin: 0 auto 0 auto;
+}
+/******************************************************************
+Fin Contenidos Galerias
+******************************************************************/
 
 
 
