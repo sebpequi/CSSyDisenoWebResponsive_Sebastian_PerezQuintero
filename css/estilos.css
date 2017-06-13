@@ -134,7 +134,7 @@ Contenidos Home General
 
 #secundaria-home {
 	background-color:#d5c75f;
-	border: solid 1px #CC0;
+	border: solid 1px #FFFF99;
 	padding: 10px 0 10px 0;	
 }
 
@@ -400,11 +400,13 @@ Contenidos Home
 #secundaria-home #paisajes {
 	width:90%;
 	padding:10px auto 10px auto;
+	margin: 0 auto 0 auto;
 }
 
 #secundaria-home #rostros {
 	width:90%;
 	padding:10px auto 10px auto;
+	margin: 0 auto 0 auto;	
 }
 
 
@@ -426,8 +428,7 @@ Contenidos Galerias
 }
 
 #area-galerias figure img {
-	width:95%;
-	margin: 0 auto 0 auto;
+	width:100%;
 }
 /******************************************************************
 Fin Contenidos Galerias
